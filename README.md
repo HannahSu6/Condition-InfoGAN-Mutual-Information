@@ -126,7 +126,9 @@ Challenges such as computational complexity and the need for fine-tuning the bal
 adversarial and information-theoretic components in the loss function were noted. Future work 
 could explore further architecture optimizations and the application of these methods to other 
 types of data beyond images. 
+
 References 
+
 [1] Goodfellow, I. J., Pouget-Abadie, J., Mirza, M., Xu, B., Warde-Farley, D., Ozair, S., 
 Courville, A., & Bengio, Y. (2014). "Generative Adversarial Nets." Neural Information 
 Processing Systems (NIPS). 
