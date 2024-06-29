@@ -26,10 +26,11 @@ framework. Specifically, the discriminator's job is to accurately differentiate 
 fake data, whereas the generator strives to produce data so convincing that it becomes 
 indistinguishable from real data. This interaction is succinctly captured by the GAN objective 
 function: 
+
 ��� ���
 � � �(�, �) = �௫~௣೏ೌ೟ೌ(௫)[log �(�)] + �௭~௣೥(௭) ቂlog ቀ1 − �൫�(�)൯ቁቃ
-where �ௗ௔௧௔ 
-is the real data distribution, and �௭(�) is a prior over input noise variables. This 
+
+where �ௗ௔௧௔ is the real data distribution, and �௭(�) is a prior over input noise variables. This 
 groundbreaking strategy not only encourages the generation of new data that mirrors the original 
 training dataset but also enhances its quality through continuous iterative training [1]. 
 Building on the GAN model, CGANs were developed to generate data conditioned on additional 
@@ -80,8 +81,9 @@ Therefore, we propose to solve the following information-regularized minimax gam
 �஼ିூ௡௙ (�஼, �஼) = �஼(�஼, �஼) + ��(�; �(�|�, �)
 
 Utilizing the architecture of InfoGAN, which reveals key structured semantic features from 
-the latent space, is designed to enhance both the control and diversity of the data generated. 
-3. Mutual Information Maximization: In practice, the mutual information term �(�;�(�|�, �) is 
+the latent space, is designed to enhance both the control and diversity of the data generated.
+
+2. Mutual Information Maximization: In practice, the mutual information term �(�;�(�|�, �) is 
 hard to maximize directly as it requires access to the posterior �(�|�). Fortunately, we can 
 obtain a lower bound of it by defining an auxiliary distribution �(�|�) to approximate 
 �(�|�) and we can define a variational lower bound, �ூ(�஼|�), of the mutual information 
