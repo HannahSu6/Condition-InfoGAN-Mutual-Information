@@ -1,5 +1,20 @@
 # Enhancing CGANs through Integrating Mutual Information
 
+## Contents
+1. [Introduction](#introduction)
+2. [Problem Description](#problem-description)
+3. [Motivation](#motivation)
+4. [Methods](#methods)
+   - [Architectural Enhancements](#architectural-enhancements)
+   - [Mutual Information Maximization](#mutual-information-maximization)
+5. [Experimental Settings and Results](#experimental-settings-and-results)
+   - [Datasets](#datasets)
+   - [Training Details](#training-details)
+   - [Results](#results)
+   - [Figures](#figures)
+6. [Conclusion](#conclusion)
+7. [References](#references)
+
 ## Introduction
 This project explores the enhancement of Conditional Generative Adversarial Networks (CGANs) by integrating mutual information to improve the diversity and quality of generated outputs. The project builds on the concept of Information Maximizing GANs (InfoGAN) to ensure that all modes of the data distribution are captured.
 
@@ -12,6 +27,7 @@ InfoGAN is a generative adversarial network that also maximizes the mutual infor
 The project is motivated by the hypothesis that enhancing CGANs with mutual information can lead to more stable and high-quality generation, particularly in multimodal data settings. Integrating CGANs with InfoGAN could allow the original InfoGAN to generate ordered digits not by categorical code but through conditional labels.
 
 ## Methods
+
 ### Architectural Enhancements
 Elements from InfoGAN are integrated into the CGAN architecture. This involves adapting the generator of the CGAN to maximize mutual information between a subset of latent codes and the generated outputs. The proposed solution involves solving an information-regularized minimax game:
 
@@ -23,6 +39,7 @@ Maximizing the mutual information term \( I(c; G(z|y, c)) \) directly is challen
 \[ \min_{G, Q} \max_D V(D, G) = V(D, G) + \lambda L(G|Q) \]
 
 ## Experimental Settings and Results
+
 ### Datasets
 The MNIST dataset was utilized for digit generation.
 
