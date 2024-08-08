@@ -51,9 +51,17 @@ The experiments aimed to demonstrate that C-InfoGAN can generate more diverse an
 
 ### Figures
 - **Figure 1:** Generated MNIST digits, each row conditioned on one label.
+  ![Figure 1](images/figure1.png)
+
 - **Figure 2:** Manipulating Latent Codes on MNIST.
+  ![Figure 2](images/figure2.png)
+
 - **Figure 3:** Manipulating Label and Latent Codes on MNIST.
+  ![Figure 3](images/figure3.png)
+
 - **Figure 4:** Manipulating Categorical Codes and Label on MNIST.
+  ![Figure 4](images/figure4.png)
+
 
 ## Conclusion
 The integration of mutual information led to observable improvements in the diversity and accuracy of generated images across different conditions. Challenges such as computational complexity and the need for fine-tuning the balance between adversarial and information-theoretic components in the loss function were noted. Future work could explore further architecture optimizations and the application of these methods to other types of data beyond images.
