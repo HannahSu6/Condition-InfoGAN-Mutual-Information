@@ -14,6 +14,7 @@
    - [Figures](#figures)
 6. [Conclusion](#conclusion)
 7. [References](#references)
+8. [License](#license)
 
 ## Introduction
 This project explores the enhancement of Conditional Generative Adversarial Networks (CGANs) by integrating mutual information to improve the diversity and quality of generated outputs. The project builds on the concept of Information Maximizing GANs (InfoGAN) to ensure that all modes of the data distribution are captured.
@@ -62,7 +63,6 @@ The experiments aimed to demonstrate that C-InfoGAN can generate more diverse an
 - **Figure 4:** Manipulating Categorical Codes and Label on MNIST.
   ![Figure 4](images/figure4.png)
 
-
 ## Conclusion
 The integration of mutual information led to observable improvements in the diversity and accuracy of generated images across different conditions. Challenges such as computational complexity and the need for fine-tuning the balance between adversarial and information-theoretic components in the loss function were noted. Future work could explore further architecture optimizations and the application of these methods to other types of data beyond images.
 
@@ -73,3 +73,6 @@ The integration of mutual information led to observable improvements in the dive
 4. Belghazi, M. I., et al. (2018). "Mutual Information Neural Estimation." International Conference on Machine Learning (ICML).
 5. Radford, A., Metz, L., & Chintala, S. (2015). "Unsupervised Representation Learning with Deep Convolutional Generative Adversarial Networks." arXiv preprint arXiv:1511.06434.
 6. Salimans, T., et al. (2016). "Improved techniques for training GANs." Advances in Neural Information Processing Systems.
+
+## License
+This project is licensed under the GNU General Public License v3.0 - see the [LICENSE](./LICENSE) file for details.
